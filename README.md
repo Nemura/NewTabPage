@@ -16,4 +16,4 @@ My page for newly opened tabs.
 [Link](https://nemura.github.io/NewTabPage/ "Live preview")
 
 ### Screenshot:
-![Screenshot machine broke](http://placeholder.xxxx "This is a screenshot")
+![Screenshot machine broke](https://github.com/Nemura/NewTabPage/blob/master/preview.png "This is a screenshot")
