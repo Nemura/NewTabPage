@@ -58,6 +58,7 @@ body {
 	width: 224px; height: 18px;
 	font-family: 'haxr', monospace;
 	font-size: 16px;
+	padding-left: 5px;
 }
 
 #youtube {
@@ -66,6 +67,7 @@ body {
 	width: 224; height: 18;
 	font-family: 'haxr', monospace;
 	font-size: 16;
+	padding-left: 5px;
 }
 
 #time {
