@@ -1,4 +1,4 @@
-var baseURL = "http://api.openweathermap.org/data/2.5/weather?q=";
+var baseURL = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=";
 var city = 'Antwerp';
 var country = 'BE';
 var key = "&APPID=15dac795069e9f6ef5b3c4c435136247";	
