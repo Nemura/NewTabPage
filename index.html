@@ -1,0 +1,65 @@
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<link rel='stylesheet' href='src/index.css' />
+	<title>♡ Welcome home</title>
+	<script src="src/jquery-2.2.4.min.js"></script>
+	<script src='src/imageRandomizer.js'></script>
+	<script src='src/weather.js'></script>
+	<script src='src/exchangeRates.js'></script>
+	<script src='src/musicPlayer.js'></script>
+    <noscript>Javascript is requred for this page to display properly, baka.</noscript>
+</head>
+<body>
+	<div id='main'>
+		<div class='box' id='sidebar'></div>
+		<div class='box' id='mainbox'>
+			<div id='time'><script src='src/time.js'></script></div>
+			<div id='musicButton'></div>
+			<div id='welcome'>お帰りなさい、 ロレンズ</div>
+			<div id='weather'></div>
+			<div id='crypto'>			
+				<div id='bitcoin'>BTC: <div id='bitcoinprice'></div></div>
+				<div id='ethereum'>ETH: <div id='ethereumprice'></div></div>
+				<div id='doge'>DOGE: <div id='dogeprice'></div></div>
+				<div id='eos'>EOS: <div id='eosprice'></div></div>
+			</div>
+			<div id='forex'>			
+				<div id='eur-usd'>USD: <div id='usdAmt'></div></div>
+				<div id='eur-gbp'>GBP: <div id='gbpAmt'></div></div>
+				<div id='eur-jpy'>JPY: <div id='jpyAmt'></div></div>
+				<div id='eur-thb'>THB: <div id='thbAmt'></div></div>
+			</div>
+
+			<div id='linkButtons'>
+			<div class='buttonCol' id='buttonRow'>
+				<div class='bookmark'><a href='http://www.4chan.org'>4ch</a></div>
+				<div class='bookmark'><a href='http://www.youtube.com'>yt</a></div>
+				<div class='bookmark'><a href='http://www.aliexpress.com'>ali</a></div>
+				<div class='bookmark'><a href='http://www.amazon.de'>amzn</a></div>
+				<div class='bookmark'><a href='http://www.drive.google.com'>drv</a></div>
+				<div class='bookmark'><a href='http://www.keep.google.com'>kp</a></div>
+				<div class='bookmark'><a href='https://translate.google.be/?hl=en&tab=wT#ja/en'>tl</a></div>
+			</div>	
+			</div>
+			<!-- <div id='linkButtons'>
+			<div class='buttonCol' id='buttonRow'>
+				<div class='siteIcon'><a href='http://www.4chan.org'><img src='src/icons/4chan.png' /></a></div>
+				<div class='siteIcon'><a href='http://www.youtube.com'><img src='src/icons/youtube.png' /></a></div>
+				<div class='siteIcon'><a href='http://www.aliexpress.com'><img src='src/icons/aliexpress.png' /></a></div>
+				<div class='siteIcon'><a href='http://www.amazon.de'><img src='src/icons/amazon.png' /></a></div>
+				<div class='siteIcon'><a href='http://www.drive.google.com'><img src='src/icons/drive.png' /></a></div>
+				<div class='siteIcon'><a href='http://www.keep.google.com'><img src='src/icons/keep.png' /></a></div>
+				<div class='siteIcon'><a href='https://translate.google.be/?hl=en&tab=wT#ja/en'><img src='src/icons/translate.png' /></a></div>
+			</div>	
+			</div> -->
+		</div>
+
+		<form method='get' action='https://www.google.com/search'>
+		<input type='text' name='q' size='31' value='' autocomplete='false' autofocus='yes' class='box' id='google' placeholder='search google'></form>
+
+		<form method='get' action='https://www.youtube.com/results'>
+		<input type='text' name='search_query' size='31' value='' autocomplete='false' autofocus='yes' class='box' id='youtube' placeholder='search youtube'></form>	
+	</div>
+</body>
+</html>

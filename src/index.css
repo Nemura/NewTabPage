@@ -1,0 +1,207 @@
+@font-face {
+	font-family: 'haxr';
+	src: url('fonts/haxrcorpttf.ttf');
+}
+
+@font-face {
+	font-family: 'jap';
+	src: url('fonts/GN-Koharuiro_Sunray.ttf');
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('fonts/Inconsolata-Regular.ttf');
+}
+
+body {
+	margin: 0;
+	background: url('images/bg01.png') #202020;
+	background-size: 100%;
+	font-family: 'Consolas','haxr';
+}
+
+#main {
+	position: absolute;
+	width: 600px; height: 358px;
+	top: 0; right: 0; left: 0; bottom: 0;
+	margin: auto;
+	background: none;
+}
+ 
+.box {
+	background: #272822;
+	border: 2px solid #80D6D9;
+	color:#FFFFFF;
+}
+
+#mainbox {
+
+	position: absolute; 
+	width: 450px; height: 300px;
+	top: 0; right: 0; left: 0; bottom: 0;
+}
+
+#sidebar {
+	position: absolute;
+	left: 460px;
+	width: 142px; height: 324px;
+	background-image: url('images/side01.gif');
+	background-size: 150% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+    
+}
+
+#google {
+	position: absolute;
+	left: 0; right: 0; top: 310px;
+	width: 224px; height: 18px;
+	font-family: 'haxr', monospace;
+	font-size: 16px;
+}
+
+#youtube {
+	position: absolute;
+	left: 230px; right: 0; top: 310px;
+	width: 224; height: 18;
+	font-family: 'haxr', monospace;
+	font-size: 16;
+}
+
+#time {
+	font-family: 'haxr';
+	font-size:16px;
+	position: absolute;
+	top: -18px;
+    width: auto;
+	height: auto;
+    left: 0px;
+}
+
+#musicButton {
+	font-family: 'haxr';
+	font-size:13px;
+	position: absolute;
+	display: inline-block;
+	top: -18px;
+    width: auto;
+	height: auto;
+    right: 0px;
+}
+
+#welcome {
+	font-family: 'jap', monospace;
+	letter-spacing: 1px;
+	font-size: 30px;
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	left: 0; right: 0; top: 25;
+}
+
+#weather {
+	font-size:16px;
+	margin: auto;
+	margin-top: 70px;
+    text-align: center;
+}
+
+#crypto {
+	position: absolute;
+	top: 120px;
+    left: 60px;
+    width: 130px;
+    font-size:12px;
+}
+
+#crypto > * {
+	top: 10px;
+}
+
+#crypto > * > *{
+	text-align: right;
+	float:right;
+}
+#bitcoin{color: rgba(247,146,26,1);}
+#ethereum{color: rgba(130,130,130,1);}
+#doge{color: rgba(284,191,26,1);}
+#eos{color: rgba(220,220,220,1);}
+
+#forex {
+	position: absolute;
+	top: 120px;
+    left: 260px;
+    width: 130px;
+    font-size:12px;
+}
+
+#forex > * {
+	top: 10px;
+}
+
+#forex > * > *{
+	text-align: right;
+	float:right;
+}
+
+#eur-usd{color: rgba(255,255,255,1);}
+#eur-gbp{color: rgba(255,255,255,1);}
+#eur-jpy{color: rgba(255,255,255,1);}
+#eur-thb{color: rgba(255,255,255,1);}
+
+#linkButtons{
+	position: absolute;
+	margin: auto;
+	left: 0; right: 0; top: 220px;
+}
+
+.buttonCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+    max-height: 200px;
+}
+
+#buttonRow {
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.bookmark a{
+	display: inline-block;
+	width:50px;
+	height:50px;
+	background-color: rgba(255, 255, 255, 0.01);
+	text-align: center;
+	line-height: 50px;
+	margin: 2px;
+	font-size:16px;
+}
+
+.bookmark a:hover {
+    transition-delay: 0s;
+    font-size: 17px;
+    background-color: rgba(128, 214, 217, 0.05);
+}
+
+a, a:visited, a:active{
+	text-decoration:none;
+	color: inherit;
+}
+
+/*Images in Icon Tiles
+.siteIcon a img{
+	width:48px;
+	height:48px;
+	-webkit-filter: opacity(.08) saturate(0%) drop-shadow(0 0 0 rgba(213, 56, 255, 1));
+	filter: opacity(.08) saturate(0%) drop-shadow(0 0 0 rgba(213, 56, 255, 1));
+}
+
+.siteIcon a img:hover{
+	width:50px;
+	height:50px;
+	-webkit-filter: opacity(.15) saturate(0%) drop-shadow(0 0 0 rgba(213, 56, 255, 1));
+	filter: opacity(.15) saturate(0%) drop-shadow(0 0 0 rgba(213, 56, 255, 1));
+}*/
