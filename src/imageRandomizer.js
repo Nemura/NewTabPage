@@ -1,4 +1,12 @@
 $(window).load(function(){
+	loadRandImage();
+
+	$("#sidebar").dblclick(function() {
+	loadRandImage();
+	});	
+});
+
+function loadRandImage(){
 	var imgCount = 12;
 	var dir = 'src/images/';
 	var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
@@ -16,4 +24,4 @@ $(window).load(function(){
 	    images[11] = 'side11.gif',
 	    images[12] = 'side12.gif';
 	document.getElementById('sidebar').style.backgroundImage = 'url(' + dir + images[randomCount] + ')';
-});
+}
