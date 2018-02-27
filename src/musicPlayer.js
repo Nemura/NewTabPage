@@ -5,11 +5,19 @@ $(document).ready(function() {
 
 	var videoDiv = document.createElement('div');
 	videoDiv.id = 'hiddenVideo';
-	document.getElementsByTagName('body')[0].appendChild(videoDiv);
+	// document.getElementsByTagName('body')[0].appendChild(videoDiv);
+	$("#mainbox").append(videoDiv);
+	$("#hiddenVideo").css({
+		"position": "absolute", 
+		"top": "0", 
+		"z-index": "-1",
+		"opacity": "0.1"
+	});
+
 	
 
 	function playMusic(){
-		$("#hiddenVideo").html("<iframe id=\"videoIframe\" width=\"0\" height=\"0\" src=\"https://www.youtube.com/embed/tU2WMPyQVqg?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>");
+		$("#hiddenVideo").html("<iframe id=\"videoIframe\" width=\"450\" height=\"300\" src=\"https://www.youtube.com/embed/mTSWcjH1ZnU?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>");
 		$("#musicButton").empty().append('❚❚');
 		$("#musicButton").off("click").click(pauseMusic);
 	}
