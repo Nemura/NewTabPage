@@ -21,7 +21,7 @@ $.getJSON(apiurl,function(result){
 function forexPrices() {
 var baseCurrency = 'EUR';
 var currencies = ['USD', 'GBP', 'JPY', 'THB'];
-var apiurl = 'https://api.fixer.io/latest?base=' + baseCurrency;
+var apiurl = 'https://api.exchangeratesapi.io/latest?base=' + baseCurrency;
  
 $.getJSON(apiurl,function(result){
     console.log(result);
