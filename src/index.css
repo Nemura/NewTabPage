@@ -120,10 +120,11 @@ body {
 	top: 10px;
 }
 
-#crypto > * > *{
+#crypto > * > .price{
 	text-align: right;
-	float:right;
+	float: right;
 }
+
 #bitcoin{color: rgba(247,146,26,1);}
 #ethereum{color: rgba(130,130,130,1);}
 #doge{color: rgba(284,191,26,1);}
